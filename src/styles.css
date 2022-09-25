@@ -1,0 +1,139 @@
+* {
+  font-family: 'League Spartan', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background-color: #fefefe;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #f24e1e;
+}
+p {
+  font-size: 2rem; 
+  text-align: center !important;
+}
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+.bio-links-container {
+  position: relative;
+  z-index: 100;
+
+  margin: 2% 7%;
+  padding: 3% 5%;
+  opacity: 1;
+  /* background: #ff784f; */
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-content img {
+  border-radius: 50%;
+  max-width: 150px;
+  height: auto;
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.about-content p {
+  margin-top: 1rem;
+}
+.about-content h1 {
+  margin-top: 2rem;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons span {
+  font-size: 3rem;
+  margin: 0 1rem ;
+}
+
+.social-icons span svg {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.links {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+}
+
+.link-card {
+  background-color: #ff6f43;
+  width: 60vw;
+  padding: 2%;
+  text-align: center;
+  margin-top: 3%;
+  border-radius: 4rem;
+
+  transition: all .5s;
+  cursor: pointer;
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.link-card:hover {
+  background-color: #f24e1e;
+}
+
+.link-card h3 {
+  font-size: calc(1vw + 12px);
+  color: #fefefe;
+}
+
+footer {
+  margin-top: 5rem;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .link-card {
+    padding: 4%;
+    margin-top: 10%;
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 476px) {
+  .social-icons span {
+    font-size: 2rem;
+  }
+  h1 {
+    text-align: center;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+}
